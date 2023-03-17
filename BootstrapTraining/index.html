@@ -1,0 +1,129 @@
+<!-- Инструкция для браузера о том что фаил является HTML документом -->
+<!DOCTYPE html>
+<!-- Язык страницы -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Строка задает настройку для браузера, чтобы он показывал страницу на всей ширине экрана -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Заголовок страницы -->
+    <title>Dreamer</title>
+
+    <!-- Подключение внешней библиотеки стилей Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS скрипт для работы кнопки навигации появляющейся на маленьких экранах-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Подключение локальных стилей CSS -->
+    <link rel="stylesheet" type="text/css" href="Styles/indexCSS.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Навигационный бар из бутстрап -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <!--p-0: удаляет отступ  -->
+          <a class="navbar-brand p-0" href="/">
+            <img src="logo.png" alt="logo" width="40" />
+          </a>
+
+          <!-- Кнопка которая отоброжается на мобильных устройствах -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="places.html">Favorite places</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Position.html">Position</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- my-5: верхний и нижний отступ(marginв относительной величине rem по отношению к корневому элемнтту) по оси Y(по вертикали) на 5 -->
+    <div class="container text-center my-5">
+      <div class="row">
+        <!-- Во внутреннем div добавляем колонку для отоброжения текста 
+        mx-auto: выравнивает по центру(автоматические отступы margin по оси X (справа и слева))
+        col-lg-6: создает колоннку. Цифра 6 указывает на ширину отоброжения дочернего элемента в родительском.
+        Если нужно отобразить по всей ширине родителя то ставится цифра 12, если на половине то указывается 6
+        lg обозначает большой размер ширины экрана, можно поменять на md: открытие сайтов на плвааншетах, sm: самый маленький к примеру для смартфоном-->
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <!-- Путь к изображению и альтернативный текст для изоброжения(текстов) -->
+          <img
+            class="rounded-img"
+            src="https://lh3.googleusercontent.com/a/AGNmyxa6y-L1ESZfKLPNBhX1_88iic2GeSzDWgZULJqqC9E=s288"
+            alt="Avatar"
+          />
+
+          <!-- fw-light: толщина шрифта -->
+          <h1 class="fw-light">DreameR</h1>
+          <!-- Параграф. text-muted: делает текст серым -->
+          <p class="lead text-muted">
+            I am excited to tech you software development.
+          </p>
+
+          <!-- Ссылка по которой будет совершаться переход на другую страницу при  нажатии на кнопку 
+          target="_blank": открытие страницы в новой вкладке-->
+          <a
+            href="https://www.youtube.com/channel/UChnn4ZZMSS4Kg2jVVLyc09Q"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            My Youtube
+            <!-- Кнопка. btn: стандартный стиль для кнопки бутсрап
+              btn-primary: стилизация кнопки скругленные края и синий цвет
+            <button class="btn btn-primary">Like!</button> -->
+          </a>
+
+          <!-- btn-secondary: стилизация кнопки в серый цвет-->
+          <a
+            href="https://github.com/Inchensenk"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            My GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
