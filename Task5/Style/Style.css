@@ -9,10 +9,12 @@
   border: 20px solid #7f00ff;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
   gap: 1em;
+  padding: 0 10% 0 10%;
+  margin: 5% 0 0 0;
+
 }
 
 .flex-container-item
@@ -28,3 +30,28 @@
   border-radius: 5px;
 }
 
+.table-item
+{
+  align-self: stretch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead{
+  background-color: #2b658c;
+}
+
+.right{
+  text-align: right;
+}
+
+.center{
+  text-align: center;
+}
+
+.left{
+  text-align: left;
+}
