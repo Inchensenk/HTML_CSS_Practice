@@ -57,7 +57,7 @@
   right: 0;
   border-radius: 1em;
   display: flex;
-  /* position: relative; */
+  position: relative;
 }
 .item-level4-img {
   align-self: flex-end;
@@ -68,7 +68,7 @@
   align-self: center;
   flex-grow: 1;
   font-size: medium;
-  /* position: relative; */
+  position: relative;
   line-height: 3em;
   left: 2.5em;
 }
