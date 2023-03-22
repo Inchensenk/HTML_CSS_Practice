@@ -1,117 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel=stylesheet type=text/css href="Style/Style.css">
+    <link rel="stylesheet" type="text/css" href="style/Style.css" />
     <title>Task5</title>
   </head>
-
   <body>
-    <div class="flex-container">
-      <!-- Таблица -->
-      <div class="flex-container-item table-item">
-        <h1>Стоимость доставки</h1>
-        <table>
-          <thead>
-            <th class="left">Страна</th>
-            <th clas="center">Ставка за перевозку</th>
-            <th class="right">Ставка за перевозку</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="left">Китай</td>
-              <td class="center">4 400 $</td>
-              <td class="right">4 400 $</td>
-            </tr>
-            <tr>
-              <td class="left">Тайвань</td>
-              <td class="center">2 200$</td>
-              <td class="right">2 200$</td>
-            </tr>
-            <tr>
-              <td class="left">Китай</td>
-              <td class="center">4 400 $</td>
-              <td class="right">4 400 $</td>
-            </tr>
-            <tr>
-              <td class="left">Тайвань</td>
-              <td class="center">2 200$</td>
-              <td class="right">2 200$</td>
-            </tr>
-            <tr>
-              <td class="left">Китай</td>
-              <td class="center">4 400 $</td>
-              <td class="right">4 400 $</td>
-            </tr>
-            <tr>
-              <td class="left">Тайвань</td>
-              <td class="center">2 200$</td>
-              <td class="right">2 200$</td>
-            </tr>
-            <tr>
-              <td class="left">Китай</td>
-              <td class="center">4 400 $</td>
-              <td class="right">4 400 $</td>
-            </tr>
-            <tr>
-              <td class="left">Тайвань</td>
-              <td class="center">2 200$</td>
-              <td class="right">2 200$</td>
-            </tr>
-          </tbody>
-        </table>
+    <!-- Flex Container -->
+    <div class="container">
+      <!-- Верхний, пустой Flex Item-->
+      <div class="item-level1-white-1"></div>
+
+      <!--Flex Item с таблицей -->
+      <div class="item-level1-turquoise-1">
+        <div class="item-level2-header">
+          <h1>Стоимость доставки</h1>
+        </div>
+
+        <div class="item-level2">
+          <table>
+            <thead>
+              <th class="left">Страна</th>
+              <th clas="center">Ставка за перевозку</th>
+              <th class="right">Ставка за перевозку</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="left">Китай</td>
+                <td class="center">4 400 $</td>
+                <td class="right">4 400 $</td>
+              </tr>
+              <tr>
+                <td class="left">Тайвань</td>
+                <td class="center">2 200$</td>
+                <td class="right">2 200$</td>
+              </tr>
+              <tr>
+                <td class="left">Китай</td>
+                <td class="center">4 400 $</td>
+                <td class="right">4 400 $</td>
+              </tr>
+              <tr>
+                <td class="left">Тайвань</td>
+                <td class="center">2 200$</td>
+                <td class="right">2 200$</td>
+              </tr>
+              <tr>
+                <td class="left">Китай</td>
+                <td class="center">4 400 $</td>
+                <td class="right">4 400 $</td>
+              </tr>
+              <tr>
+                <td class="left">Тайвань</td>
+                <td class="center">2 200$</td>
+                <td class="right">2 200$</td>
+              </tr>
+              <tr>
+                <td class="left">Китай</td>
+                <td class="center">4 400 $</td>
+                <td class="right">4 400 $</td>
+              </tr>
+              <tr>
+                <td class="left">Тайвань</td>
+                <td class="center">2 200$</td>
+                <td class="right">2 200$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <!-- Плитки -->
+      <!-- Flex Item с плитками -->
+      <div class="item-level1-white-2">
+        <div class="item-level2-header">
+          <h1>Способ доставки</h1>
+        </div>
 
-      <div class="flex-container-item">
-        <h1>Способ доставки</h1>
-
-        <div class="flex-container-item">
-          <div class="flex-item">
-            <figure>
-              <figcaption>Экспедирование</figcaption>
+        <div class="item-level2">
+          <div class="item-level3">
+            <div class="item-level4-text"><h2>Экспедирование</h2></div>
+            <div class="item-level4-img">
               <img src="IMG/Truck.png" alt="Truck" />
-            </figure>
+            </div>
           </div>
 
-          <div class="flex-item">
-            <figure>
-              <figcaption>Перевозка медикаментов</figcaption>
+          <div class="item-level3">
+            <div class="item-level4-text"><h2>Перевозка медикаментов</h2></div>
+            <div class="item-level4-img">
               <img src="IMG/Pills.png" alt="Pills" />
-            </figure>
+            </div>
           </div>
 
-          <div class="flex-item">
-            <figure>
-              <figcaption>Сборные рефгрузы</figcaption>
+          <div class="item-level3">
+            <div class="item-level4-text"><h2>Сборные рефгрузы</h2></div>
+            <div class="item-level4-img">
               <img src="IMG/FuturisticTruck.png" alt="FuturisticTruck" />
-            </figure>
+            </div>
           </div>
 
-          <div class="flex-item">
-            <figure>
-              <figcaption>Перевозка стройматериалов</figcaption>
+          <div class="item-level3">
+            <div class="item-level4-text">
+              <h2>Перевозка стройматериалов</h2>
+            </div>
+            <div class="item-level4-img">
               <img src="IMG/Tools.png" alt="Tools" />
-            </figure>
+            </div>
           </div>
 
-          <div class="flex-item">
-            <figure>
-              <figcaption>Перевозка продуктов питания</figcaption>
+          <div class="item-level3">
+            <div class="item-level4-text">
+              <h2>Перевозка продуктов питания</h2>
+            </div>
+            <div class="item-level4-img">
               <img src="IMG/Vegetables.png" alt="Vegetables" />
-            </figure>
+            </div>
           </div>
 
-          <div class="flex-item">
-            <figure>
-              <figcaption>Экспедирование</figcaption>
+          <div class="item-level3">
+            <div class="item-level4-text"><h2>Экспедирование</h2></div>
+            <div class="item-level4-img">
               <img src="IMG/Truck.png" alt="Truck" />
-            </figure>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Пустой нижний Flex Item -->
+      <div class="item-level1-turquoise-2"></div>
     </div>
   </body>
 </html>
