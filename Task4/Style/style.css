@@ -34,7 +34,7 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   height: auto;
-  width: 80%;
+  width: 95%;
   gap: 1em;
   border: 5px solid rgb(23, 0, 128);
 }
